@@ -1,0 +1,32 @@
+{
+  "name": "g-station",
+  "version": "1.0.0",
+  "description": "A multi-game platform with iframe embedding",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server ./dist -p 3000 --cors -c-1",
+    "build": "node src/scripts/generate.js build",
+    "new-game": "node src/scripts/generate.js new-game",
+    "preview": "npm run build && npm start",
+    "preview-alt": "npm run build; node preview-server.js",
+    "serve": "npx serve dist",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "games",
+    "iframe",
+    "html5",
+    "static-site"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rimraf": "^3.0.2",
+    "serve": "^14.2.1"
+  }
+}

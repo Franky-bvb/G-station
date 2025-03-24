@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 基本元数据 - 定义字符集、视口设置和标题 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Station - Free Online Games</title>
+    
+    <!-- SEO相关元标签 - 帮助搜索引擎理解页面内容 -->
+    <meta name="description" content="Play free online games on G Station. Discover thousands of games across action, puzzle, strategy, sports and more categories.">
+    <meta name="keywords" content="free games, online games, browser games, html5 games, action games, puzzle games, strategy games, sports games">
+    
+    <!-- 样式表链接 - 引用CSS文件 -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Open Graph标签 - 用于社交媒体分享时显示丰富预览 -->
+    <meta property="og:title" content="G Station - Free Online Games">
+    <meta property="og:description" content="Play free online games on G Station. Discover thousands of games across action, puzzle, strategy, sports and more categories.">
+    <meta property="og:image" content="{{SITE_URL}}/assets/images/g-station-logo.png">
+    <meta property="og:url" content="{{SITE_URL}}">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- 页面头部 - 包含导航菜单和搜索框 -->
+    <header>
+        <div class="header-container">
+            <!-- 网站Logo和首页链接 -->
+            <div class="logo">
+                <a href="/index.html">G Station</a>
+            </div>
+            
+            <!-- 主导航菜单 - 各游戏分类入口 -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/games/action/index.html">Action</a></li>
+                    <li><a href="/games/puzzle/index.html">Puzzle</a></li>
+                    <li><a href="/games/strategy/index.html">Strategy</a></li>
+                    <li><a href="/games/sports/index.html">Sports</a></li>
+                </ul>
+            </nav>
+            
+            <!-- 搜索框 - 用于查找游戏 -->
+            <div class="search-bar">
+                <form action="/search.html" method="get">
+                    <input type="text" name="q" placeholder="Search games...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 英雄区/横幅区域 - 网站的主要宣传区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Play The Best Free Online Games</h1>
+                <p>Discover thousands of games across various categories. New games added regularly!</p>
+            </div>
+        </section>
+
+        <!-- 精选游戏部分 - 展示设置了featured=true的游戏 -->
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="games-grid">
+                {{{FEATURED_GAMES}}} <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            </div>
+        </section>
+
+        <!-- 热门分类部分 - 展示游戏分类入口 -->
+        <section class="popular-categories">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <!-- 动作游戏分类卡片 -->
+                <div class="category-card">
+                    <a href="/games/action/index.html">
+                        <img src="/assets/images/categories/action.jpg" alt="Action Games">
+                        <h3>Action Games</h3>
+                    </a>
+                </div>
+                <!-- 益智游戏分类卡片 -->
+                <div class="category-card">
+                    <a href="/games/puzzle/index.html">
+                        <img src="/assets/images/categories/puzzle.jpg" alt="Puzzle Games">
+                        <h3>Puzzle Games</h3>
+                    </a>
+                </div>
+                <!-- 策略游戏分类卡片 -->
+                <div class="category-card">
+                    <a href="/games/strategy/index.html">
+                        <img src="/assets/images/categories/strategy.jpg" alt="Strategy Games">
+                        <h3>Strategy Games</h3>
+                    </a>
+                </div>
+                <!-- 体育游戏分类卡片 -->
+                <div class="category-card">
+                    <a href="/games/sports/index.html">
+                        <img src="/assets/images/categories/sports.jpg" alt="Sports Games">
+                        <h3>Sports Games</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新游戏部分 - 展示设置了new=true的新发布游戏 -->
+        <section class="new-games">
+            <h2>New Games</h2>
+            <div class="games-grid">
+                {{{NEW_GAMES}}} <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            </div>
+        </section>
+
+        <!-- 热门游戏部分 - 展示设置了popular=true的热门游戏 -->
+        <section class="popular-games">
+            <h2>Most Popular</h2>
+            <div class="games-grid">
+                {{{POPULAR_GAMES}}} <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 - 包含链接和版权信息 -->
+    <footer>
+        <div class="footer-container">
+            <!-- 游戏分类链接 -->
+            <div class="footer-links">
+                <h3>Game Categories</h3>
+                <ul>
+                    <li><a href="/games/action/index.html">Action Games</a></li>
+                    <li><a href="/games/puzzle/index.html">Puzzle Games</a></li>
+                    <li><a href="/games/strategy/index.html">Strategy Games</a></li>
+                    <li><a href="/games/sports/index.html">Sports Games</a></li>
+                </ul>
+            </div>
+            
+            <!-- 公司相关链接 -->
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- 版权信息 -->
+            <div class="copyright">
+                <p>&copy; 2023 G Station. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript引用 - 加载交互功能脚本 -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html> 

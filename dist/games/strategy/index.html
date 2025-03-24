@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 基本元数据 - 定义字符集、视口设置和标题 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Games - G Station</title> <!-- 动态插入分类名称 -->
+    
+    <!-- SEO相关元标签 - 帮助搜索引擎理解页面内容 -->
+    <meta name="description" content="Play the best free Strategy games on G Station. Find all the top Strategy games to play online for free.">
+    <meta name="keywords" content="Strategy games, free Strategy games, online Strategy games, play Strategy games">
+    
+    <!-- 样式表链接 - 引用CSS文件 -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Open Graph标签 - 用于社交媒体分享时显示丰富预览 -->
+    <meta property="og:title" content="Strategy Games - G Station">
+    <meta property="og:description" content="Play the best free Strategy games on G Station. Find all the top Strategy games to play online for free.">
+    <meta property="og:image" content="https://yoursite.com/assets/images/categories/strategy.jpg"> <!-- 使用分类图片 -->
+    <meta property="og:url" content="https://yoursite.com/games/strategy/index.html"> <!-- 分类页面URL -->
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- 页面头部 - 包含导航菜单和搜索框 -->
+    <header>
+        <div class="header-container">
+            <!-- 网站Logo和首页链接 -->
+            <div class="logo">
+                <a href="/index.html">G Station</a>
+            </div>
+            
+            <!-- 主导航菜单 - 各游戏分类入口，当前分类会高亮显示 -->
+            <nav class="main-nav">
+                <ul>
+                    <!--  条件语句：如果当前是action分类，添加active类 -->
+                    <li><a href="/games/action/index.html" >Action</a></li>
+                    <li><a href="/games/puzzle/index.html" >Puzzle</a></li>
+                    <li><a href="/games/strategy/index.html" class="active">Strategy</a></li>
+                    <li><a href="/games/sports/index.html" >Sports</a></li>
+                </ul>
+            </nav>
+            
+            <!-- 搜索框 - 用于查找游戏 -->
+            <div class="search-bar">
+                <form action="/search.html" method="get">
+                    <input type="text" name="q" placeholder="Search games...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 分类头部 - 显示分类名称和描述 -->
+        <section class="category-header">
+            <h1>Strategy Games</h1> <!-- 分类名称 -->
+            <p>Discover and play the best free strategy games on G Station. Enjoy a wide variety of strategy games that you can play directly in your browser.</p> <!-- 分类描述 -->
+        </section>
+
+        <!-- 分类中的热门游戏部分 - 展示该分类中设置了popular=true的游戏 -->
+        <section class="popular-in-category">
+            <h2>Popular Strategy Games</h2>
+            <div class="games-grid">
+                 <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            </div>
+        </section>
+
+        <!-- 分类中的所有游戏部分 - 展示该分类中的所有游戏 -->
+        <section class="all-category-games">
+            <h2>All Strategy Games</h2>
+            <div class="games-grid">
+                <!-- 游戏卡片组件 - 在游戏列表中显示单个游戏的预览 -->
+<div class="game-card">
+    <!-- 链接到游戏详情页面 - 使用游戏分类和slug构建URL -->
+    <a href="/games/strategy/sample-game.html">
+        <!-- 游戏缩略图 - 支持懒加载以提高性能 -->
+        <!-- 如果lazy_load为true，使用data-src属性实现懒加载；否则使用标准src属性 -->
+        <img data-src="/assets/images/games/action/sample-game-thumbnail.jpg" alt="Sample Game">
+        
+        <!-- 游戏卡片内容区域 - 显示游戏信息 -->
+        <div class="game-card-content">
+            <!-- 游戏标题 -->
+            <h3>Sample Game</h3>
+            
+            <!-- 游戏简短描述 -->
+            <p>This is a sample game placeholder</p>
+            
+            <!-- 游戏分类标签 - 显示游戏所属分类 -->
+            <span class="category">Strategy</span>
+        </div>
+    </a>
+</div>  <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 - 包含链接和版权信息 -->
+    <footer>
+        <div class="footer-container">
+            <!-- 游戏分类链接 -->
+            <div class="footer-links">
+                <h3>Game Categories</h3>
+                <ul>
+                    <li><a href="/games/action/index.html">Action Games</a></li>
+                    <li><a href="/games/puzzle/index.html">Puzzle Games</a></li>
+                    <li><a href="/games/strategy/index.html">Strategy Games</a></li>
+                    <li><a href="/games/sports/index.html">Sports Games</a></li>
+                </ul>
+            </div>
+            
+            <!-- 公司相关链接 -->
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- 版权信息 -->
+            <div class="copyright">
+                <p>&copy; 2023 G Station. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript引用 - 加载交互功能脚本 -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html> 

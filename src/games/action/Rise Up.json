@@ -1,0 +1,17 @@
+{
+  "title": "Rise Up",
+  "slug": "rise-up",
+  "category": "action",
+  "category_display": "Action",
+  "description_short": "This is a sample game placeholder",
+  "description": "This is a sample game used as a placeholder when no games are available in a category.",
+  "description_full": "This is a sample game used as a placeholder when no games are available in a category. It's not meant to be played but serves as an example of how game data should be structured.",
+  "controls": "Not applicable for this sample game.",
+  "thumbnail_url": "https://img.cdn.famobi.com/portal/html5games/images/tmp/RiseUpTeaser.jpg?v=0.2-e9a56fac",
+  "game_url": "https://play.famobi.com/rise-up",
+  "tags": ["action", "rise", "arcade", "aliens"],
+  "featured": true,
+  "popular": true,
+  "new": true,
+  "related_games": []
+} 

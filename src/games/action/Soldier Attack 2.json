@@ -1,0 +1,17 @@
+{
+  "title": "Soldier Attack 2",
+  "slug": "soldier-attack-2",
+  "category": "action",
+  "category_display": "Action",
+  "description_short": "shoot the aliens in as less shots as possible. Aim and click to shoot",
+  "description": "Shoot the aliens in as less shots as possible. Aim and click to shoot.",
+  "description_full": "Shoot the aliens in as less shots as possible. Aim and click to shoot.",
+  "controls": "Not applicable for this sample game.",
+  "thumbnail_url": "https://www.htmlgames.com/uploaded/game/thumb200/soldierattack2200.webp",
+  "game_url": "https://cdn.htmlgames.com/SoldierAttack2/",
+  "tags": ["action", "soldier", "attack"],
+  "featured": true,
+  "popular": true,
+  "new": true,
+  "related_games": []
+} 

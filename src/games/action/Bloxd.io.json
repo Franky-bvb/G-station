@@ -1,0 +1,17 @@
+{
+  "title": "Bloxd.io",
+  "slug": "bloxd.io",
+  "category": "action",
+  "category_display": "Action",
+  "description_short": "Shoot the bottles. Click on the cylinder to reload",
+  "description": "Shoot the bottles. Click on the cylinder to reload.",
+  "description_full": "Shoot the bottles. Click on the cylinder to reload.",
+  "controls": "Not applicable for this sample game.",
+  "thumbnail_url": "https://www.htmlgames.com/uploaded/game/thumb200/bottleshooter200.webp",
+  "game_url": "https://cdn.htmlgames.com/BottleShooter/",
+  "tags": ["sample", "placeholder"],
+  "featured": true,
+  "popular": true,
+  "new": true,
+  "related_games": []
+} 

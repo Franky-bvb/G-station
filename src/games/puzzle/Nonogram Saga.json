@@ -1,0 +1,17 @@
+{
+  "title": "Nonogram Saga",
+  "slug": "nonogram-saga",
+  "category": "puzzle",
+  "category_display": "Puzzle",
+  "description_short": "Nonogram Saga is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.",
+  "description": "Nonogram Saga is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.",
+  "description_full": "Nonogram Saga is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.",
+  "controls": "Use arrow keys or WASD to move your spaceship. Press SPACE to shoot. Collect power-ups to upgrade your weapons and defeat the alien invaders.",
+  "thumbnail_url": "https://www.htmlgames.com/uploaded/game/thumb200/nonogramsaga200.webp",
+  "game_url": "https://cdn.htmlgames.com/NonogramSaga/",
+  "tags": ["puzzle", "stickman", "arcade", "aliens"],
+  "featured": true,
+  "popular": true,
+  "new": true,
+  "related_games": ["alien-attack", "asteroid-hunter", "galaxy-defender"]
+} 

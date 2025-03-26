@@ -4,20 +4,20 @@
     <!-- 基本元数据 - 定义字符集、视口设置和标题 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Games - G Station</title> <!-- 动态插入分类名称 -->
+    <title>Daily Futoshiki - G Station</title>
     
     <!-- SEO相关元标签 - 帮助搜索引擎理解页面内容 -->
-    <meta name="description" content="Play the best free Sports games on G Station. Find all the top Sports games to play online for free.">
-    <meta name="keywords" content="Sports games, free Sports games, online Sports games, play Sports games">
+    <meta name="description" content="Daily Futoshiki is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.">
+    <meta name="keywords" content="puzzle, puzzle, stickman, arcade, aliens">
     
     <!-- 样式表链接 - 引用CSS文件 -->
     <link rel="stylesheet" href="/assets/css/style.css">
     
     <!-- Open Graph标签 - 用于社交媒体分享时显示丰富预览 -->
-    <meta property="og:title" content="Sports Games - G Station">
-    <meta property="og:description" content="Play the best free Sports games on G Station. Find all the top Sports games to play online for free.">
-    <meta property="og:image" content="https://yoursite.com/assets/images/categories/sports.jpg"> <!-- 使用分类图片 -->
-    <meta property="og:url" content="https://yoursite.com/games/sports/index.html"> <!-- 分类页面URL -->
+    <meta property="og:title" content="Daily Futoshiki - G Station">
+    <meta property="og:description" content="Daily Futoshiki is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.">
+    <meta property="og:image" content="https://www.htmlgames.com/uploaded/game/thumb200/dailyfutoshiki200.webp">
+    <meta property="og:url" content="https://yoursite.com/games/puzzle/daily-futoshiki.html">
     <meta property="og:type" content="website">
 </head>
 <body>
@@ -29,14 +29,13 @@
                 <a href="/index.html">G Station</a>
             </div>
             
-            <!-- 主导航菜单 - 各游戏分类入口，当前分类会高亮显示 -->
+            <!-- 主导航菜单 - 各游戏分类入口 -->
             <nav class="main-nav">
                 <ul>
-                    <!--  条件语句：如果当前是action分类，添加active类 -->
-                    <li><a href="/games/action/index.html" >Action</a></li>
-                    <li><a href="/games/puzzle/index.html" >Puzzle</a></li>
-                    <li><a href="/games/strategy/index.html" >Strategy</a></li>
-                    <li><a href="/games/sports/index.html" class="active">Sports</a></li>
+                    <li><a href="/games/action/index.html">Action</a></li>
+                    <li><a href="/games/puzzle/index.html">Puzzle</a></li>
+                    <li><a href="/games/strategy/index.html">Strategy</a></li>
+                    <li><a href="/games/sports/index.html">Sports</a></li>
                 </ul>
             </nav>
             
@@ -52,65 +51,76 @@
 
     <!-- 主内容区域 -->
     <main>
-        <!-- 分类头部 - 显示分类名称和描述 -->
-        <section class="category-header">
-            <h1>Sports Games</h1> <!-- 分类名称 -->
-            <p>Discover and play the best free sports games on G Station. Enjoy a wide variety of sports games that you can play directly in your browser.</p> <!-- 分类描述 -->
-        </section>
-
-        <!-- 分类中的热门游戏部分 - 展示该分类中设置了popular=true的游戏 -->
-        <section class="popular-in-category">
-            <h2>Popular Sports Games</h2>
-            <div class="games-grid">
-                <!-- 游戏卡片组件 - 在游戏列表中显示单个游戏的预览 -->
-<div class="game-card">
-    <!-- 链接到游戏详情页面 - 使用游戏分类和slug构建URL -->
-    <a href="/games/sports/sports-mahjong.html">
-        <!-- 游戏缩略图 - 支持懒加载以提高性能 -->
-        <!-- 如果lazy_load为true，使用data-src属性实现懒加载；否则使用标准src属性 -->
-        <img src="https://www.htmlgames.com/uploaded/game/thumb200/sportsmahjong200.webp" alt="Sports Mahjong">
-        
-        <!-- 游戏卡片内容区域 - 显示游戏信息 -->
-        <div class="game-card-content">
+        <!-- 游戏容器 - 显示游戏和相关信息 -->
+        <section class="game-container">
             <!-- 游戏标题 -->
-            <h3>Sports Mahjong</h3>
+            <h1>Daily Futoshiki</h1>
             
-            <!-- 游戏简短描述 -->
-            <p>Sports Mahjong is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.</p>
+            <!-- 游戏iframe包装器 - 使游戏可以响应式适应不同屏幕 -->
+            <div class="game-wrapper">
+                <!-- iframe标签 - 嵌入外部游戏内容 -->
+                <iframe src="https://cdn.htmlgames.com/DailyFutoshiki/" allowfullscreen="true" scrolling="no" frameborder="0" allow="autoplay; fullscreen; microphone" title="Daily Futoshiki"></iframe>
+            </div>
             
-            <!-- 游戏分类标签 - 显示游戏所属分类 -->
-            <span class="category">Sports</span>
-        </div>
-    </a>
-</div>  <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+            <!-- 游戏描述区域 -->
+            <div class="game-description">
+                <h2>About Daily Futoshiki</h2>
+                <p>Daily Futoshiki is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.</p>
+                
+                <!-- 游戏控制说明 -->
+                <div class="game-controls">
+                    <h3>How to Play</h3>
+                    <p>Use arrow keys or WASD to move your spaceship. Press SPACE to shoot. Collect power-ups to upgrade your weapons and defeat the alien invaders.</p>
+                </div>
             </div>
         </section>
 
-        <!-- 分类中的所有游戏部分 - 展示该分类中的所有游戏 -->
-        <section class="all-category-games">
-            <h2>All Sports Games</h2>
+        <!-- 相关游戏部分 - 推荐类似游戏 -->
+        <section class="related-games">
+            <h2>Similar Games</h2>
             <div class="games-grid">
                 <!-- 游戏卡片组件 - 在游戏列表中显示单个游戏的预览 -->
 <div class="game-card">
     <!-- 链接到游戏详情页面 - 使用游戏分类和slug构建URL -->
-    <a href="/games/sports/sports-mahjong.html">
+    <a href="/games/puzzle/Stickman Games.html">
         <!-- 游戏缩略图 - 支持懒加载以提高性能 -->
         <!-- 如果lazy_load为true，使用data-src属性实现懒加载；否则使用标准src属性 -->
-        <img data-src="https://www.htmlgames.com/uploaded/game/thumb200/sportsmahjong200.webp" alt="Sports Mahjong">
+        <img data-src="https://imgs.crazygames.com/count-masters-stickman-games_16x9/20250220041115/count-masters-stickman-games_16x9-cover?metadata&#x3D;none&amp;quality&#x3D;70&amp;width&#x3D;594.5" alt="Stickman Games">
         
         <!-- 游戏卡片内容区域 - 显示游戏信息 -->
         <div class="game-card-content">
             <!-- 游戏标题 -->
-            <h3>Sports Mahjong</h3>
+            <h3>Stickman Games</h3>
             
             <!-- 游戏简短描述 -->
-            <p>Sports Mahjong is a puzzle game where you need to fill in the grid with the correct colors to solve the puzzle.</p>
+            <p>Fast-paced space shooter with multiple levels and power-ups</p>
             
             <!-- 游戏分类标签 - 显示游戏所属分类 -->
-            <span class="category">Sports</span>
+            <span class="category">Puzzle</span>
         </div>
     </a>
-</div>  <!-- 三层花括号表示不转义HTML内容，插入游戏卡片 -->
+</div> 
+<!-- 游戏卡片组件 - 在游戏列表中显示单个游戏的预览 -->
+<div class="game-card">
+    <!-- 链接到游戏详情页面 - 使用游戏分类和slug构建URL -->
+    <a href="/games/puzzle/Stickman Games.html">
+        <!-- 游戏缩略图 - 支持懒加载以提高性能 -->
+        <!-- 如果lazy_load为true，使用data-src属性实现懒加载；否则使用标准src属性 -->
+        <img data-src="https://imgs.crazygames.com/count-masters-stickman-games_16x9/20250220041115/count-masters-stickman-games_16x9-cover?metadata&#x3D;none&amp;quality&#x3D;70&amp;width&#x3D;594.5" alt="Stickman Games">
+        
+        <!-- 游戏卡片内容区域 - 显示游戏信息 -->
+        <div class="game-card-content">
+            <!-- 游戏标题 -->
+            <h3>Stickman Games</h3>
+            
+            <!-- 游戏简短描述 -->
+            <p>Fast-paced space shooter with multiple levels and power-ups</p>
+            
+            <!-- 游戏分类标签 - 显示游戏所属分类 -->
+            <span class="category">Puzzle</span>
+        </div>
+    </a>
+</div> 
             </div>
         </section>
     </main>

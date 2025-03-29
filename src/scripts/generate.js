@@ -88,7 +88,7 @@ function generateGamePage(gameData) {
     };
     
     // Render template
-    const htmlContent = template(templateData);
+    let htmlContent = addGoogleAnalytics(template(templateData));
     
     // Create output directory if it doesn't exist
     const outputDir = path.join(config.outputDir, 'games', gameData.category);
@@ -241,7 +241,7 @@ function generateCategoryPage(category) {
     
     try {
         // Render template
-        const htmlContent = template(templateData);
+        let htmlContent = addGoogleAnalytics(template(templateData));
         
         // Create output directory if it doesn't exist
         const outputDir = path.join(config.outputDir, 'games', category);
@@ -302,7 +302,7 @@ function generateHomePage() {
     
     try {
         // Render template
-        const htmlContent = template(templateData);
+        let htmlContent = addGoogleAnalytics(template(templateData));
         
         // Write output file
         const outputPath = path.join(config.outputDir, 'index.html');
@@ -470,4 +470,18 @@ if (require.main === module) {
 module.exports = {
     generateSite,
     generateNewGame
-}; 
+};
+
+// 添加Google Analytics代码到HTML内容
+function addGoogleAnalytics(htmlContent) {
+    return htmlContent.replace('</body>', `
+    <!-- Google Analytics代码 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW6KBYZ1L1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GW6KBYZ1L1');
+    </script>
+</body>`);
+} 
